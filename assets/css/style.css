@@ -26,7 +26,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  margin-bottom: 0; /* spacing handled on .hero */
+  margin-bottom: 0;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
   transition: background 200ms ease, box-shadow 200ms ease;
@@ -49,9 +49,9 @@ nav {
 }
 
 .logo-letter {
-  background-color: #0052ff;
+  background: linear-gradient(to bottom, #1a1a2e, #0066ff);
   color: white;
-  width: 32px;
+  width: 32px;  
   height: 32px;
   display: flex;
   align-items: center;
@@ -112,8 +112,10 @@ nav {
   gap: 4rem;
   align-items: center;
   /* add top padding so content isn't hidden behind sticky header */
-  padding: 72px 4rem 2rem 4rem;
+  padding: 10rem 4rem 10rem 4rem;
   background: linear-gradient(45deg, #f8f9fa, #ffffff);
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
@@ -130,6 +132,7 @@ nav {
   font-size: 0.9rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  color: #0066ff;
 }
 
 .dot {
@@ -219,13 +222,13 @@ h1 {
 .glow-circle::before {
   content: "";
   position: absolute;
-  top: 89%;
+  top: 60%;
   left: 85%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: #0066ff;
-  filter: blur(100px);
+  filter: blur(70px);
   z-index: 2;
 }
 
@@ -792,8 +795,8 @@ footer {
 /***************************** End Home Page Styles ***************************/
 
 /***************************** Start About Page Styles ***************************/
-.about-page{
-  background-color: #FFF;
+.about-page {
+  background-color: #fff;
 }
 .about-hero {
   padding: 4rem 0 1rem;
@@ -803,7 +806,6 @@ footer {
 .about-content {
   max-width: 800px;
   margin: 0 auto;
-  
 }
 
 .about-content h1 {
@@ -842,7 +844,6 @@ footer {
 .mission-section {
   max-width: 850px;
   padding: 0 2rem;
-
 }
 
 .mission-section h2 {
@@ -891,8 +892,7 @@ footer {
 .excellence-section {
   margin: 3rem 0;
   padding: 6rem 2rem;
-  background-color: #F8F9FA;
-  
+  background-color: #f8f9fa;
 }
 
 .excellence-content h2 {
@@ -928,10 +928,10 @@ footer {
 }
 
 .card-number {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 2rem;
-  background-color: #0066FF;
+  background-color: #0066ff;
   line-height: 0.5;
   position: relative;
   padding: 1.5rem;
